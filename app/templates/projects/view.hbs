@@ -1,0 +1,6 @@
+{{#unless isLoading}}
+  <div class="container">
+      {{project-header user=user title=project.title client=project.client summary=project.summary}}
+      {{project-body user=user images=images}}
+  </div>
+{{/unless}}

@@ -1,0 +1,62 @@
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="col-xs-12 col-sm-2 pull-left">
+      {{#if user.firstName}}
+        <p class="footer-text">
+          {{#if user.showCopyright}}
+            <strong>&copy; {{date}}</strong><br>
+          {{/if}}
+          {{#link-to 'index'}}{{user.firstName}} {{user.lastName}}
+            {{#if user.showTitle}}
+              - {{user.title}}
+            {{/if}}
+          {{/link-to}}
+        </p>
+      {{/if}}
+    </div>
+    {{#if user.showSocialLinks}}
+      <div class="col-xs-12 col-sm-2 pull-left">
+        <p class="footer-text">
+          <strong>Follow me on</strong><br>
+          {{social-links user=user linksClass="default-link" }}
+        </p>
+      </div>
+    {{/if}}
+    {{#if user.showContact}}
+      <div class="col-xs-12 col-sm-2 pull-left">
+        <p class="footer-text">
+          <strong>Get in touch</strong><br>
+          {{#if user.showEmail}}
+            <a href="mailto:{{user.email}}">{{user.email}}</a>
+            {{#if user.showPhone}}
+              <br>
+            {{/if}}
+          {{/if}}
+          {{#if user.showPhone}}
+            <a href="tel://{{user.phone}}">{{user.phone}}</a>
+          {{/if}}
+        </p>
+      </div>
+    {{/if}}
+    {{#if user.showLocation}}
+      <div class="col-xs-12 col-sm-2 pull-left">
+        <p class="footer-text">
+          <strong>Locatation</strong><br>
+          {{user.city}}
+          {{user.state}}
+          {{user.country}}
+        </p>
+      </div>
+    {{/if}}
+    {{#if user.showCreator}}
+      <div class="col-xs-12 col-sm-2 pull-right">
+        {{#if user.creator}}
+          <p class="footer-text creator-text text-right">
+            <strong>Built by </strong><br>
+            <a href={{user.creator.github}}>{{user.creator.firstName}} {{user.creator.lastName}}</a>
+          </p>
+        {{/if}}
+      </div>
+    {{/if}}
+  </div>
+</footer>

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default clear-pad-mar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-custom-menu" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#if user.isBrandImage}}
+        {{#link-to "index" class="navbar-brand"}}<img class="brandLogo" src={{user.brandLogo}}/>{{/link-to}}
+      {{/if}}
+      {{#if user.isBrandText}}
+        <h3 class="navbar-brand">{{user.brandLogo}}</h3>
+      {{/if}}
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-custom-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li>{{#link-to 'index'}}<span title="isHome" class={{if isHome "active"}}>WORK</span>{{/link-to}}</li>
+        {{#if user.showAboutPage}}
+          <li>{{#link-to 'about.view'}}<span title="isAbout" class={{if isAbout "active"}}>ABOUT</span>{{/link-to}}</li>
+        {{/if}}
+        {{#if user.showContactPage}}
+          <li>{{#link-to 'contact.view'}}<span title="isContact" class={{if isContact "active"}}>CONTACT</span>{{/link-to}}</li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

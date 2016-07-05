@@ -1,0 +1,7 @@
+<div class="container-fluid">
+  <div class="row">
+    {{#each images as |image index|}}
+      {{project-image isLinkable=true content=image divClass="col-xs-6 col-sm-4 col-md-3 clear-pad-mar" imageClass="home-image"}}
+    {{/each}}
+  </div>
+</div>

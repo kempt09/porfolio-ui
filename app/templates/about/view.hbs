@@ -1,0 +1,45 @@
+{{#if user.showAboutPage}}
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 {{if user.showAboutContactInfo 'col-sm-4' 'col-sm-12'}} about-div text-center">
+        {{#if user.aboutPageHeadshot}}
+          <img src={{user.aboutPageHeadshot}} class="about-image"/>
+        {{/if}}
+        {{#if user.showAboutPageImageDescription}}
+          <h5>{{user.firstName}} {{user.lastName}}</h5>
+          {{#if user.showTitle}}
+            <h6>{{user.title}}</h6>
+          {{/if}}
+        {{/if}}
+      </div>
+      <div class="col-xs-12 col-sm-8 about-div">
+        {{#if user.showAboutContactInfo}}
+        <h4 class="contact-info-heading clear-pad-mar">CONTACT INFO:</h4>
+        <div class="contact-div">
+          {{#if user.showEmail}}
+            <span class="contact-label"> Email: </span>
+            <a class="about-links" href="mailto:{{user.email}}">{{user.email}}</a>
+            {{#if user.showPhone}}
+              <br>
+            {{/if}}
+          {{/if}}
+          {{#if user.showPhone}}
+            <span class="contact-label">Phone: </span>
+            <a class="about-links" href="tel://{{user.phone}}">{{user.phone}}</a>
+          {{/if}}
+          {{#if user.showAboutSocialLinks}}
+            <br>
+            <span class="contact-label"> Social: </span>
+            {{social-links user=user linksClass=linkClass }}
+          {{/if}}
+        </div>
+        {{/if}}
+        {{#if user.showAboutPageSummary}}
+          <div class="summary-div">
+            <p>{{user.aboutPageSummary}}</p>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+{{/if}}

@@ -1,0 +1,12 @@
+<div class={{divClass}}>
+  {{#if isLinkable}}
+    {{#link-to "projects.view" content.id}}
+      <img  title={{content.title}} class={{imageClass}} src={{content.path}}/>
+      {{#if isHovering}}
+          <h3 class="image-hover-text">{{placeholder}}</h3>
+      {{/if}}
+    {{/link-to}}
+    {{else}}
+    <img style="border: 1px solid #8c8c8c" class={{imageClass}} src={{content.path}}/>
+  {{/if}}
+</div>

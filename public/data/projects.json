@@ -1,0 +1,16 @@
+[
+	{
+		"id": "1",
+		"title": "",
+		"summary": "",
+		"client": "",
+		"images": [
+			{
+				"id": "1",
+				"title": "",
+				"path": "/images/.../...",
+				"class": ""
+			}
+		]
+	}
+]

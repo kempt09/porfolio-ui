@@ -1,0 +1,18 @@
+<div class="row project-header">
+  <div class="col-xs-6 col-sm-3">
+    {{#if user.showProjectHeader}}
+      <h6 class="project-heading clear-pad-mar">{{user.defaultProjectHeader}}</h6>
+      <p class="project-text">{{title}}</p>
+    {{/if}}
+    {{#if user.showProjectClient}}
+      <h6 class="project-heading clear-pad-mar">CLIENT</h6>
+      <p class="project-text">{{client}}</p>
+    {{/if}}
+  </div>
+  {{#if user.showProjectSummary}}
+    <div class="col-xs-12 col-sm-5">
+      <h6 class="project-heading clear-pad-mar">PROJECT DESCRIPTION</h6>
+      <p class="project-text">{{summary}}</p>
+    </div>
+  {{/if}}
+</div>

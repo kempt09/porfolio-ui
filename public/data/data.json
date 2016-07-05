@@ -1,0 +1,66 @@
+
+  {
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "phone": "",
+    "city": "",
+    "state": "",
+    "country": "",
+    "title": "",
+    "brandLogo": "/images/... or text",
+    "defaultProjectHeader": "",
+    "aboutPageSummary": "",
+    "aboutPageHeadshot": "",
+    "showAboutPageImageDescription": true,
+    "showAboutContactInfo": true,
+    "showAboutPageSummary": true,
+    "showAboutSocialLinks": true,
+    "isBrandImage": true,
+    "isBrandText": true,
+    "showEmail": true,
+    "showPhone": true,
+    "showTitle": true,
+    "showLocation": true,
+    "showContact": true,
+    "showSocialLinks": true,
+    "showCreator": true,
+    "showAboutPage": true,
+    "showProjectClient": true,
+    "showProjectHeader": true,
+    "showProjectSummary": true,
+    "showCopyright": true,
+    "social": [
+      {
+        "twitter": false,
+        "_link": ""
+      },
+      {
+        "facebook": false,
+        "_link": ""
+      },
+      {
+        "linkedin": false,
+        "_link": ""
+      },
+      {
+        "github": false,
+        "_link": ""
+      },
+      {
+        "instagram": false,
+        "_link": ""
+      }
+    ],
+    "creator": {
+      "firstName": "Christopher",
+      "lastName": "Kempton",
+      "title": "Javascript Developer",
+      "email": "kempt09@gmail.com",
+      "github": "https://github.com/kempt09",
+      "twitter": "https://twitter.com/javascriptChris",
+      "linkedin": "https://www.linkedin.com/in/christopherkempton",
+      "resources": ["ember.js", "bootstrap"],
+      "demo": "https://www.kemptondesign.com"
+    }
+  }
